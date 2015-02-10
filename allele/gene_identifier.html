@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>GeneIdentifier</title>
+    
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+  </head>
+  
+  <body class="allele allele_gene_identifier">
+    <div class="container">
+      <div class="col-md-4">
+	<h3><a href="/">ClinGen data model</a></h3>
+	<h4><a href="/allele/">allele model</a></h4>
+	<ul>
+	  <li><a href="/allele/allele_name.html">AlleleName</a></li>
+	  <li><a href="/allele/canonical_allele.html">CanonicalAllele</a></li>
+	  <li><a href="/allele/canonical_allele_identifier.html">CanonicalAlleleIdentifier</a></li>
+	  <li><a href="/allele/complex_canonical_allele.html">ComplexCanonicalAllele</a></li>
+	  <li><a href="/allele/complex_nucleotide_canonical_allele.html">ComplexNucleotideCanonicalAllele</a></li>
+	  <li><a href="/allele/complex_protein_canonical_allele.html">ComplexProteinCanonicalAllele</a></li>
+	  <li><a href="/allele/gene.html">Gene</a></li>
+	  <li><a href="/allele/gene_identifier.html">GeneIdentifier</a></li>
+	  <li><a href="/allele/genomic_reference_sequence.html">GenomicReferenceSequence</a></li>
+	  <li><a href="/allele/genomic_simple_allele.html">GenomicSimpleAllele</a></li>
+	  <li><a href="/allele/locus_identifer.html">LocusIdentifer</a></li>
+	  <li><a href="/allele/nucleotide_simple_allele.html">NucleotideSimpleAllele</a></li>
+	  <li><a href="/allele/protein_reference_sequence.html">ProteinReferenceSequence</a></li>
+	  <li><a href="/allele/protein_simple_allele.html">ProteinSimpleAllele</a></li>
+	  <li><a href="/allele/reference_genome.html">ReferenceGenome</a></li>
+	  <li><a href="/allele/reference_sequence.html">ReferenceSequence</a></li>
+	  <li><a href="/allele/simple_allele.html">SimpleAllele</a></li>
+	  <li><a href="/allele/simple_canonical_allele.html">SimpleCanonicalAllele</a></li>
+	  <li><a href="/allele/simple_nucleotide_canonical_allele.html">SimpleNucleotideCanonicalAllele</a></li>
+	  <li><a href="/allele/simple_protein_canonical_allele.html">SimpleProteinCanonicalAllele</a></li>
+	  <li><a href="/allele/transcript_reference_sequence.html">TranscriptReferenceSequence</a></li>
+	  <li><a href="/allele/transcript_simple_allele.html">TranscriptSimpleAllele</a></li>
+	  <li><a href="/allele/">allele model</a></li>
+	</ul>
+      </div>
+      <div class="col-md-8">
+	<h1>GeneIdentifier</h1>
+	<h2 id="definition">Definition</h2>
+
+<p>A name for a gene granted by a recognized naming agency such as NCBI or HGNC</p>
+
+<h2 id="scope-and-usage">Scope and Usage</h2>
+
+<p>Names are given to genes by public organizations, and these names are then shared among the scientific community.  The fact that there are multiple naming organizations, plus the existence of historical names means that there will potentially be different names for the same gene.</p>
+
+<p>GeneIdentifier tracks the name given to gene, along with the agency that produced the name.  Because the same name could be given to different genes by different agencies, the (agency, name) pair must be used to compare GeneIdentifiers.</p>
+
+<h2 id="exclusions-and-limitations">Exclusions and Limitations</h2>
+
+<p>Over time, naming agencies may deprecate a name in favor of a new name.   When this occurs, a GeneIdentifier with the old name is marked as invalid, and should no longer be used for either identification or display purposes.  However, other than via the inclusion of a new GeneIdentifier with the new name, the current data model does not track the history of GeneIdentifiers.</p>
+
+      </div>
+    </div>
+  </body>
+</html>

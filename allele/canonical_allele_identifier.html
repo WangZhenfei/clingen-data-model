@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>CanonicalAlleleIdentifier</title>
+    
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+  </head>
+  
+  <body class="allele allele_canonical_allele_identifier">
+    <div class="container">
+      <div class="col-md-4">
+	<h3><a href="/">ClinGen data model</a></h3>
+	<h4><a href="/allele/">allele model</a></h4>
+	<ul>
+	  <li><a href="/allele/allele_name.html">AlleleName</a></li>
+	  <li><a href="/allele/canonical_allele.html">CanonicalAllele</a></li>
+	  <li><a href="/allele/canonical_allele_identifier.html">CanonicalAlleleIdentifier</a></li>
+	  <li><a href="/allele/complex_canonical_allele.html">ComplexCanonicalAllele</a></li>
+	  <li><a href="/allele/complex_nucleotide_canonical_allele.html">ComplexNucleotideCanonicalAllele</a></li>
+	  <li><a href="/allele/complex_protein_canonical_allele.html">ComplexProteinCanonicalAllele</a></li>
+	  <li><a href="/allele/gene.html">Gene</a></li>
+	  <li><a href="/allele/gene_identifier.html">GeneIdentifier</a></li>
+	  <li><a href="/allele/genomic_reference_sequence.html">GenomicReferenceSequence</a></li>
+	  <li><a href="/allele/genomic_simple_allele.html">GenomicSimpleAllele</a></li>
+	  <li><a href="/allele/locus_identifer.html">LocusIdentifer</a></li>
+	  <li><a href="/allele/nucleotide_simple_allele.html">NucleotideSimpleAllele</a></li>
+	  <li><a href="/allele/protein_reference_sequence.html">ProteinReferenceSequence</a></li>
+	  <li><a href="/allele/protein_simple_allele.html">ProteinSimpleAllele</a></li>
+	  <li><a href="/allele/reference_genome.html">ReferenceGenome</a></li>
+	  <li><a href="/allele/reference_sequence.html">ReferenceSequence</a></li>
+	  <li><a href="/allele/simple_allele.html">SimpleAllele</a></li>
+	  <li><a href="/allele/simple_canonical_allele.html">SimpleCanonicalAllele</a></li>
+	  <li><a href="/allele/simple_nucleotide_canonical_allele.html">SimpleNucleotideCanonicalAllele</a></li>
+	  <li><a href="/allele/simple_protein_canonical_allele.html">SimpleProteinCanonicalAllele</a></li>
+	  <li><a href="/allele/transcript_reference_sequence.html">TranscriptReferenceSequence</a></li>
+	  <li><a href="/allele/transcript_simple_allele.html">TranscriptSimpleAllele</a></li>
+	  <li><a href="/allele/">allele model</a></li>
+	</ul>
+      </div>
+      <div class="col-md-8">
+	<h1>CanonicalAlleleIdentifier</h1>
+	<h2 id="definition">Definition</h2>
+
+<p>The identifier given to a CanonicalAllele by a given Canonicalizer.</p>
+
+<h2 id="scope-and-usage">Scope and Usage</h2>
+
+<p>Because the Allele Data Model does not specify the rules for canonicalization, different canonicalizing authorities may create different canonical ids for the same abstract CanonicalAllele.</p>
+
+<p>A given CanonicalAllele can have zero or more (1 or more?) CanonicalAlleleIdentifiers denoting its canonical identifier and the system that granted that identifier.</p>
+
+<p>See CanonicalAllele.</p>
+
+<h2 id="exclusions-and-limitations">Exclusions and Limitations:</h2>
+
+<p>CanonicalAlleleIdentifier can only be used for identifiers granted by a canonicalizing authority.  Historic names, HGVS expressions, and other non-canonical representations of an allele are not appropriate uses of CanonicalAlleleIdentifier.  For identifiers of this type, see AlleleName.</p>
+
+      </div>
+    </div>
+  </body>
+</html>
